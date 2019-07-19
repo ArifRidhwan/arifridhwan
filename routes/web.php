@@ -44,6 +44,7 @@ Route::resource('artikel', 'ArtikelController');
 Route::resource('categori', 'CategoriController');
 Route::resource('tag', 'TagController');
 
+
 Route::resource('/', 'FrontendController');
 Route::get('/blog/', 'FrontendController@allblog')->name('blog');
 Route::get('/blog/{artikel}', 'FrontendController@detailblog')->name('single-blog');
