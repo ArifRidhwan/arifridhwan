@@ -35,14 +35,11 @@
 		    		<div class="row d-flex">
 		    			<div class="col-md pr-4 d-flex topper align-items-center">
 					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-						    <span class="text">+ 1235 2355 98</span>
+						    <span class="text">08**********</span>
 					    </div>
 					    <div class="col-md pr-4 d-flex topper align-items-center">
 					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-						    <span class="text">youremail@email.com</span>
-					    </div>
-					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
-						    <p class="mb-0 register-link"><span>Open hours:</span> <span>Monday - Sunday</span> <span>8:00AM - 9:00PM</span></p>
+						    <span class="text">arifridhwan68@gmail.com</span>
 					    </div>
 				    </div>
 			    </div>
@@ -236,14 +233,17 @@
         		<div class="heading-menu text-center ftco-animate">
         			<h3>Bandung food</h3>
 				</div>
-				</center>
+        </center>
+        @php
+          $artikel = \App\Artikel::all();
+        @endphp
 				@foreach($artikel as $data)
         		<div class="menus d-flex ftco-animate">
               <div class="menu-img img" style="background-image: url({{ asset('assets/img/artikel/'.$data->foto)}} )"></div>
               <div class="text">
               	<div class="d-flex">
 	                <div class="one-half">
-	                  <a href="/blog/{{$data->slug}}"><h3>{{ $data->judul }}</h3></a>
+	                  <a href="/blog/{{ $data->slug }}"><h3>{{ $data->judul }}</h3></a>
 	                </div>
 	              </div>
 	              <!-- <p>{!! $data->konten !!}</p> -->

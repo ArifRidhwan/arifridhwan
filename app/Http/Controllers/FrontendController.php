@@ -20,13 +20,8 @@ class FrontendController extends Controller
     public function allblog(Request $request)
     {
 
-        // $artikel = Artikel::orderBy('created_at','desc');
-        // $kategori = Kategori::all();
-        // $tag = Tag::all();
-        // return view('news', compact('artikel','kategori','tag'));
-
-        $artikel = Artikel::all();
-        $categori = Categori::all();
+        $artikel = Artikel::orderBy('created_at','desc')->get();
+        $categori = categori::all();
         $tag = Tag::all();
 
         $cari = $request->cari;
@@ -35,17 +30,21 @@ class FrontendController extends Controller
             $artikel = Artikel::where('judul', 'LIKE', "%$cari%")->paginate(4);
         }
         return view('blog', compact('artikel','categori','tag'));
+
+        // $artikel = Artikel::with('kategori', 'tag')->get();
+        // return view('blog');
     }
 
     public function detailblog(Artikel $artikel)
     {
+        $artikel = Artikel::where('slug', $artikel->slug)->get();
         $categori = Categori::all();
         $tag = Tag::all();
-        return view('single', compact('artikel','categori','tag'));
+        return view('single-blog', compact('artikel','categori','tag'));
     }
 
     public function blogcat(Kategori $cat)
-    {
+    {   
         $tag = Tag::all();
         $artikel = $cat->artikel()->latest()->paginate(5);
         return view('category', compact('artikel', 'cat', 'tag'));

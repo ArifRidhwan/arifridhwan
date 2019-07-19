@@ -34,7 +34,9 @@ Route::get('/menu', function () {
 Route::get('/blog', function () {
     return view('/blog');
 });
-
+Route::get('/single-blog', function () {
+    return view('/single-blog');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -44,8 +46,8 @@ Route::resource('tag', 'TagController');
 
 Route::resource('/', 'FrontendController');
 Route::get('/blog/', 'FrontendController@allblog')->name('blog');
-Route::get('/{artikel}', 'FrontendController@detailblog')->name('single');
-Route::get('/news/{artikel}', 'FrontendController@detailblog')->name('single');
+Route::get('/blog/{artikel}', 'FrontendController@detailblog')->name('single-blog');
+// Route::get('/news/{artikel}', 'FrontendController@detailblog')->name('single');
 Route::get('/category/{cat}', 'FrontendController@blogcat')->name('category');
 Route::get('/tag/{tag}', 'FrontendController@blogtag')->name('tag');
 
