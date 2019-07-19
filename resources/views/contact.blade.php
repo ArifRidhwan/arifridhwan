@@ -66,7 +66,7 @@
 	  </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url({{asset('assets/frontend/images/bg_3.jpg')}})" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
@@ -78,7 +78,36 @@
       </div>
     </section>
 	
-		
+		<section class="ftco-section contact-section bg-light">
+      <div class="container">
+        <div class="row d-flex contact-info">
+          <div class="col-md-12 mb-4">
+            <h2 class="h4 font-weight-bold">Contact Information</h2>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-md-3 d-flex">
+          	<div class="dbox">
+	            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex">
+          	<div class="dbox">
+	            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex">
+          	<div class="dbox">
+	            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex">
+          	<div class="dbox">
+	            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 		<section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
 			<div class="container">
 				<div class="row d-flex align-items-stretch no-gutters">
@@ -108,7 +137,6 @@ s.setAttribute('data-timestamp', +new Date());
   
           </div>
 					  <div class="col-md-6 d-flex align-items-stretch">
-						<div id="map"></div>
 					</div>
 				</div>
 			</div>
@@ -118,27 +146,27 @@ s.setAttribute('data-timestamp', +new Date());
 			<div class="container-fluid px-0">
 				<div class="row no-gutters">
 					<div class="col-md">
-						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url(images/insta-1.jpg);">
+						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url({{asset('assets/frontend/images/insta-1.jpg')}})">
 							<span class="ion-logo-instagram"></span>
 						</a>
 					</div>
 					<div class="col-md">
-						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url(images/insta-2.jpg);">
+						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url({{asset('assets/frontend/images/insta-2.jpg')}})">
 							<span class="ion-logo-instagram"></span>
 						</a>
 					</div>
 					<div class="col-md">
-						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url(images/insta-3.jpg);">
+						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url({{asset('assets/frontend/images/insta-3.jpg')}})">
 							<span class="ion-logo-instagram"></span>
 						</a>
 					</div>
 					<div class="col-md">
-						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url(images/insta-4.jpg);">
+						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url({{asset('assets/frontend/images/insta-4.jpg')}})">
 							<span class="ion-logo-instagram"></span>
 						</a>
 					</div>
 					<div class="col-md">
-						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url(images/insta-5.jpg);">
+						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url({{asset('assets/frontend/images/insta-5.jpg')}})">
 							<span class="ion-logo-instagram"></span>
 						</a>
 					</div>
@@ -179,19 +207,19 @@ s.setAttribute('data-timestamp', +new Date());
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Instagram</h2>
               <div class="thumb d-sm-flex">
-	            	<a href="#" class="thumb-menu img" style="background-image: url(images/insta-1.jpg);">
+	            	<a href="#" class="thumb-menu img" style="background-image: url({{asset('assets/frontend/images/insta-1.jpg')}})">
 	            	</a>
-	            	<a href="#" class="thumb-menu img" style="background-image: url(images/insta-2.jpg);">
+	            	<a href="#" class="thumb-menu img" style="background-image: url({{asset('assets/frontend/images/insta-2.jpg')}})">
 	            	</a>
-	            	<a href="#" class="thumb-menu img" style="background-image: url(images/insta-3.jpg);">
+	            	<a href="#" class="thumb-menu img" style="background-image: url({{asset('assets/frontend/images/insta-3.jpg')}})">
 	            	</a>
 	            </div>
 	            <div class="thumb d-flex">
-	            	<a href="#" class="thumb-menu img" style="background-image: url(images/insta-4.jpg);">
+	            	<a href="#" class="thumb-menu img" style="background-image: url({{asset('assets/frontend/images/insta-4.jpg')}})">
 	            	</a>
-	            	<a href="#" class="thumb-menu img" style="background-image: url(images/insta-5.jpg);">
+	            	<a href="#" class="thumb-menu img" style="background-image: url({{asset('assets/frontend/images/insta-5.jpg')}})">
 	            	</a>
-	            	<a href="#" class="thumb-menu img" style="background-image: url(images/insta-6.jpg);">
+	            	<a href="#" class="thumb-menu img" style="background-image: url({{asset('assets/frontend/images/insta-6.jpg')}})">
 	            	</a>
 	            </div>
             </div>

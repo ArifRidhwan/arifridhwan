@@ -51,7 +51,7 @@
     </div>
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="/">Waroeng Soenda</a>
+	      <a class="navbar-brand" href="/">Bandung Food Stalls</a>
 	     
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
@@ -67,7 +67,7 @@
 	  </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url({{asset('assets/frontend/images/bg_3.jpg')}})" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
@@ -86,7 +86,7 @@
 					<div class="col-sm-10 wrap-about ftco-animate text-center">
 	          <div class="heading-section mb-4 text-center">
 	          	<span class="subheading">About</span>
-	            <h2 class="mb-4">Waroeng Soenda</h2>
+	            <h2 class="mb-4">Bandung Food Stalls</h2>
 	          </div>
 						<p>This web displays and introduces about the kinds of specialties of Bandung, especially Sundanese.
 								This web displays traditional to modern food and drinks.</p>
@@ -99,27 +99,27 @@
 			<div class="container-fluid px-0">
 				<div class="row no-gutters">
 					<div class="col-md">
-						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url(images/insta-1.jpg);">
+						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url({{asset('assets/frontendimages/insta-1.jpg')}})">
 							<span class="ion-logo-instagram"></span>
 						</a>
 					</div>
 					<div class="col-md">
-						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url(images/insta-2.jpg);">
+						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url({{asset('assets/frontend/images/insta-2.jpg')}});">
 							<span class="ion-logo-instagram"></span>
 						</a>
 					</div>
 					<div class="col-md">
-						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url(images/insta-3.jpg);">
+						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url({{asset('assets/frontend/images/insta-3.jpg')}})">
 							<span class="ion-logo-instagram"></span>
 						</a>
 					</div>
 					<div class="col-md">
-						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url(images/insta-4.jpg);">
+						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url({{asset('assets/frontend/images/insta-4.jpg')}})">
 							<span class="ion-logo-instagram"></span>
 						</a>
 					</div>
 					<div class="col-md">
-						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url(images/insta-5.jpg);">
+						<a href="#" class="instagram img d-flex align-items-center justify-content-center" style="background-image: url({{asset('assets/frontend/images/insta-5.jpg')}})">
 							<span class="ion-logo-instagram"></span>
 						</a>
 					</div>
@@ -132,7 +132,7 @@
         <div class="row mb-5">
           <div class="col-md-6 col-lg-3">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Appetizer</h2>
+              <h2 class="ftco-heading-2">Bandung Food Stalls</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -159,38 +159,8 @@
             <div class="ftco-footer-widget mb-4">
             	<h2 class="ftco-heading-2">Newsletter</h2>
             	<p>Far far away, behind the word mountains, far from the countries.</p>
-              <form action="#" class="subscribe-form">
-                <div class="form-group">
-                  <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
-                  <input type="submit" value="Subscribe" class="form-control submit px-3">
-                </div>
-              </form>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Instagram</h2>
-              <div class="thumb d-sm-flex">
-	            	<a href="#" class="thumb-menu img" style="background-image: url(images/insta-1.jpg);">
-	            	</a>
-	            	<a href="#" class="thumb-menu img" style="background-image: url(images/insta-2.jpg);">
-	            	</a>
-	            	<a href="#" class="thumb-menu img" style="background-image: url(images/insta-3.jpg);">
-	            	</a>
-	            </div>
-	            <div class="thumb d-flex">
-	            	<a href="#" class="thumb-menu img" style="background-image: url(images/insta-4.jpg);">
-	            	</a>
-	            	<a href="#" class="thumb-menu img" style="background-image: url(images/insta-5.jpg);">
-	            	</a>
-	            	<a href="#" class="thumb-menu img" style="background-image: url(images/insta-6.jpg);">
-	            	</a>
-	            </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>

@@ -64,42 +64,39 @@
     <!-- END nav -->
     
     <section class="home-slider owl-carousel js-fullheight">
-      <div class="slider-item js-fullheight" style="background-image: url(images/bg_1.jpg);">
+      <div class="slider-item js-fullheight" style="background-image: url({{asset('assets/frontend/images/bg_1.jpg')}})">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text js-fullheight justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-12 col-sm-12 text-center ftco-animate">
               <h1 class="mb-4 mt-5">Our Delicious Specialties</h1>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
             </div>
 
           </div>
         </div>
       </div>
 
-      <div class="slider-item js-fullheight" style="background-image: url(images/bg_2.jpg);">
+      <div class="slider-item js-fullheight" style="background-image: url({{asset('assets/frontend/images/bg_2.jpg')}})">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text js-fullheight justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-12 col-sm-12 text-center ftco-animate">
               <h1 class="mb-4 mt-5">The Best Place to Kick of Your Day</h1>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
             </div>
 
           </div>
         </div>
       </div>
 
-      <div class="slider-item js-fullheight" style="background-image: url(images/bg_3.jpg);">
+      <div class="slider-item js-fullheight" style="background-image: url({{asset('assets/fronten/dimages/bg_3.jpg')}})">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-12 col-sm-12 text-center ftco-animate">
               <h1 class="mb-4 mt-5">Creamy Hot and Ready to Serve</h1>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
             </div>
 
           </div>
@@ -129,7 +126,7 @@
 		</section>
 
 		
-		<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_4.jpg);" data-stellar-background-ratio="0.5">
+		<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url({{asset('assets/frontend/images/bg_4.jpg')}})" data-stellar-background-ratio="0.5">
 		<!-- <section class="ftco-section ftco-counter img ftco-no-pt" id="section-counter"> -->
     	<div class="container">
     		<div class="row d-md-flex align-items-center justify-content-center">
@@ -257,88 +254,8 @@
 			<div class="overlay"></div>
       <div class="container">
         <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-          	<span class="subheading">Testimony</span>
-            <h2 class="mb-4">Happy Customer</h2>
           </div>
         </div>
-        <div class="row ftco-animate justify-content-center">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item">
-                <div class="testimony-wrap text-center pb-5">
-                  <div class="user-img mb-4" style="background-image: url({{asset('assets/frontend/images/person_1.jpg')}})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Jason McClean</p>
-                    <span class="position">Customer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap text-center pb-5">
-                  <div class="user-img mb-4" style="background-image: url({{asset('assets/frontend/images/person_2.jpg')}})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Mark Stevenson</p>
-                    <span class="position">Customer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap text-center pb-5">
-                  <div class="user-img mb-4" style="background-image: url({{asset('assets/frontend/images/person_3.jpg')}})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Art Leonard</p>
-                    <span class="position">Customer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap text-center pb-5">
-                  <div class="user-img mb-4" style="background-image: url({{asset('assets/frontend/images/person_4.jpg')}})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Rose Henderson</p>
-                    <span class="position">Customer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap text-center pb-5">
-                  <div class="user-img mb-4" style="background-image: url({{asset('assets/frontend/images/person_3.jpg')}})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Ian Boner</p>
-                    <span class="position">Customer</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 		
 		<section class="ftco-section ftco-no-pt ftco-no-pb">

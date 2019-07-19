@@ -51,7 +51,7 @@
     </div>
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="/">Waroeng Soenda</a>
+	      <a class="navbar-brand" href="/">Bandung Food Stalls</a>
 	      
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
@@ -67,7 +67,7 @@
 	  </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url({{asset('assets/frontend/images/bg_3.jpg')}})" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
